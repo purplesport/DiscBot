@@ -12,6 +12,7 @@ client = discord.Client(intents=intents)
 async def on_ready():
   print(f'We have logged in as {client.user}')
 
+#To do: add checks for day of the week (not sat/sun), adjust nickname to be in format “<random prefix>.<random postfix>”
 
 @client.event
 async def on_message(message):
